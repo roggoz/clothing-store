@@ -1,9 +1,13 @@
-import React from "react";
+import { IoLogoInstagram } from "react-icons/io";
+import { RiTwitterXLine } from "react-icons/ri";
+import { TbBrandMeta } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
     <footer className="border-t py-12">
-      <div className="container mx-auto grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0">
         <div>
           <h3 className="text-lg text-gray-800 mb-4">Newsletter</h3>
           <p className="text-gray-500 mb-4">
@@ -30,6 +34,100 @@ const Footer = () => {
             </button>
           </form>
         </div>
+        {/* shop links */}
+
+        <div>
+          <h3 className="text-lg text-gray-800 mb-4">Shop</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Men's top Wear
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Women's top Wear
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Men's bottom Wear
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Women's bottom Wear
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {/* container links */}
+        <div>
+          <h3 className="text-lg text-gray-800 mb-4">Support</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Contact us
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                FAQ's
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className="hover:text-blue-600 transition-colors">
+                Features
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {/* follow us */}
+        <div>
+          <h3 className="text-lg text-gray-800 mb-4">Follow Us</h3>
+          <div className="flex items-center space-x-4 mv6">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300"
+            >
+              <TbBrandMeta className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300"
+            >
+              <IoLogoInstagram className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300"
+            >
+              <RiTwitterXLine className="h-4 w-4" />
+            </a>
+          </div>
+          <p className="text-gray-400">Call Us</p>
+          <p>
+            <FiPhoneCall className="inline-block mr-2" />
+            0721114116
+          </p>
+        </div>
+      </div>
+      {/* footer bottom */}
+      <div className="container mx-auto mt-12 px-4 lg:px-0 border-t border-e-gray-200 pt-6">
+        <p className="text-gray-400 text-sm tracking-tighter text-center">
+          &copy; {new Date().getFullYear()}, Reagan Code. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
