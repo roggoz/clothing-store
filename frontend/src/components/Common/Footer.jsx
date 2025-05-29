@@ -89,13 +89,13 @@ const Footer = () => {
         </div>
         {/* follow us */}
         <div>
-          <h3 className="text-lg text-gray-800 mb-4">Follow Us</h3>
+          <h3 className="text-lg text-gray-800 mb-2">Follow Us</h3>
           <div className="flex items-center space-x-4 mv6">
             <a
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300"
+              className="hover:text-blue-600"
             >
               <TbBrandMeta className="h-5 w-5" />
             </a>
@@ -103,7 +103,7 @@ const Footer = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300"
+              className="hover:text-blue-600"
             >
               <IoLogoInstagram className="h-5 w-5" />
             </a>
@@ -111,12 +111,13 @@ const Footer = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300"
+              className="hover:text-blue-600"
             >
               <RiTwitterXLine className="h-4 w-4" />
             </a>
           </div>
-          <p className="text-gray-400">Call Us</p>
+
+          <p className="text-gray-800 mt-3 mb-1">Contact Us</p>
           <p>
             <FiPhoneCall className="inline-block mr-2" />
             0721114116
